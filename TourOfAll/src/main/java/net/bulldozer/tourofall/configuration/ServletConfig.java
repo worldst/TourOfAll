@@ -7,7 +7,8 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.tiles3.TilesConfigurer;
+import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
 @Configuration
 @ComponentScan(basePackages={"net.bulldozer.tourofall.controller"})
@@ -16,10 +17,14 @@ public class ServletConfig extends WebMvcConfigurerAdapter{
 	
 	@Bean
 	public ViewResolver viewResolver(){
-		InternalResourceViewResolver irvr = new InternalResourceViewResolver();	
-		irvr.setPrefix("/WEB-INF/views/");
-		irvr.setSuffix(".jsp");
-		return irvr;
+		return new TilesViewResolver();
+	}
+	
+	@Bean
+	public TilesConfigurer tilesConfigurer(){
+		TilesConfigurer configurer = new TilesConfigurer();
+		configurer.setDefinitions(new String[]{"/WEB-INF/definition/tiles-defs.xml"});
+		return configurer;
 	}
 	
 	@Override
