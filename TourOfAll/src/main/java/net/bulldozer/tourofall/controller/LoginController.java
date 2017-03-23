@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/home")
-public class HomeController {
+@RequestMapping("/login")
+public class LoginController {
 	@RequestMapping(method=RequestMethod.GET)
-	public String showHomePage(){
-		return "home";
+	public String showLoginPage(){
+		return "login";
 	}
 }
