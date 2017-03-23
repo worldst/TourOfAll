@@ -14,7 +14,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		auth
 			.inMemoryAuthentication()
 				.withUser("kmgeu").password("12345").roles("USER")
-			.and()
+				.and()
 				.withUser("kmgeu123").password("123456").roles("ADMIN");
 	}
 
