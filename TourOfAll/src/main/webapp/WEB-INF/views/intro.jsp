@@ -39,7 +39,6 @@
 						<a href="<c:url value="/home"/>" class="btn btn-lg btn-default">시작하기</a>
 					</p>
 				</div>
-
 				<div class="mastfoot">
 					<div class="inner">
 						<p>
@@ -48,13 +47,9 @@
 						</p>
 					</div>
 				</div>
-
 			</div>
-
 		</div>
-
 	</div>
-
 	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
