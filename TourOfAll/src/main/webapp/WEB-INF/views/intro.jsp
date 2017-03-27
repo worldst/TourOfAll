@@ -29,21 +29,22 @@
 </head>
 
 <body>
-
 	<div class="site-wrapper">
+		<h1 class="site-wrapper-title">
+			<a href="<c:url value="/"/>">Tour Of All</a>
+		</h1>
 		<div class="site-wrapper-inner">
+			<h2>모두의 여행에 오신 것을 환영합니다.<br/><br/>당신의 경험을 공유하세요</h2>
+			<br/>
 			<div class="cover-container">
 				<div class="inner cover">
-					<h1>모두의 여행</h1>
-					<p class="lead">
-						<a href="<c:url value="/home"/>" class="btn btn-lg btn-default">시작하기</a>
-					</p>
+
+					<a href="<c:url value="/home"/>" class="btn btn-lg btn-default">시작하기</a>
 				</div>
 				<div class="mastfoot">
 					<div class="inner">
 						<p>
-							Cover template for <a href="http://getbootstrap.com">Bootstrap</a>,
-							by <a href="https://twitter.com/mdo">@mdo</a>.
+							&copy; Team Bulldozer 2017
 						</p>
 					</div>
 				</div>

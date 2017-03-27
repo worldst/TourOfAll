@@ -34,11 +34,13 @@
 				required autofocus> <label for="password" class="sr-only">Password</label>
 			<input type="password" name="password" id="password"
 				class="form-control" placeholder="Password" required>
+<!-- 
 			<div class="checkbox">
 				<label> <input type="checkbox" value="remember-me">
 					Remember me
 				</label>
 			</div>
+ -->
 			<input type="hidden" name="${_csrf.parameterName}" value="${ _csrf.token}" />
 			<button class="btn btn-lg btn-primary btn-block" type="submit">로그인</button>
 		</form>

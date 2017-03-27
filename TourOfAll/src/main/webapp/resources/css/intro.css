@@ -22,17 +22,18 @@ a, a:focus, a:hover {
  */
 html, body {
 	height: 100%;
-	background-image: url('http://cfile25.uf.tistory.com/image/276E404E563C867D4ED6AC');
-	background-repeat:no-repeat;
-	background-size:100% 100%;
-
 }
 
 body {
+	/*background-image: url('http://cfile29.uf.tistory.com/image/2565F43E567A21370918F3');*/
+	background-image: url('../images/background1.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
 	color: #fff;
 	text-align: center;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
 }
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
 	display: table;
@@ -43,9 +44,12 @@ body {
 	-webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
 	box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
 }
-
+.site-wrapper-title{
+	text-align:left;
+	margin-left:50px;
+}
 .site-wrapper-inner {
-	display: table-cell;
+	display: table-row;
 	vertical-align: top;
 }
 
