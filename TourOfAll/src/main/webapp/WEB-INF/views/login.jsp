@@ -16,6 +16,7 @@
 
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet/less" type="text/css" href="login.less" />
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script
@@ -25,27 +26,40 @@
 <link href="<c:url value="/resources/css/login.css"/>" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<form class="form-signin" method="post"
-			action="<c:url value="/login"/>">
-			<h2 class="form-signin-heading">Tour Of All</h2>
-			<label for="username" class="sr-only">ID</label> <input type="text"
-				name="username" id="username" class="form-control" placeholder="ID"
-				required autofocus> <label for="password" class="sr-only">Password</label>
-			<input type="password" name="password" id="password"
-				class="form-control" placeholder="Password" required>
-<!-- 
+	<form class="form-signin img-circle" method="post"
+		action="<c:url value="/login"/>">
+		<h2 class="form-signin-heading" style="text-align: center;">Tour
+			Of All</h2>
+		<br> <br> <br> <br>
+
+		<div class="form-group has-feedback has-feedback-left">
+			<div class="icon-addon addon-md">
+				<input id="userid" type="text" class="form-control"
+					placeholder="아이디를 입력해주세요." /> <label for="userid"
+					class="glyphicon glyphicon-user"  title="ID"></label>
+			</div>
+			<div class="icon-addon addon-md">
+				<input type="password" name="password" id="password"
+					class="form-control" placeholder="비밀번호를 입력해주세요." required>
+				<label for="userpw" class="glyphicon glyphicon-lock" 
+					title="PASSWORD"></label>
+			</div>
 			<div class="checkbox">
 				<label> <input type="checkbox" value="remember-me">
-					Remember me
+					ID 저장하기
 				</label>
 			</div>
- -->
-			<input type="hidden" name="${_csrf.parameterName}" value="${ _csrf.token}" />
-			<button class="btn btn-lg btn-primary btn-block" type="submit">로그인</button>
-		</form>
+			<input type="hidden" name="${_csrf.parameterName}"
+				value="${ _csrf.token}" />
+			<button class="btn btn-lg btn-primary btn-block" type="submit">로그인
+			</button>
+			<ul>
+				<li><label class="checkbox"><a href="#">회원가입</a></label>
+				<li><label class="checkbox"><a href="#">아이디/비밀번호 찾기</a></label>
+			</ul>
+			</div>
+	</form>
 
-	</div>
 	<!-- /container -->
 
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
